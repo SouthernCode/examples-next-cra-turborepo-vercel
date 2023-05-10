@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 
 async function getData(): Promise<Array<IBlogPost> | null> {
+    const MAIN_APP_BASE_URL = process.env.MAIN_APP_BASE_URL || 'http://localhost:3000';
 
-    const MAIN_APP_BASE_URL = 'http://localhost:3000';
     const res = await fetch(`${MAIN_APP_BASE_URL}/api/blog`);
     if (!res.ok) {
         throw new Error('Failed to fetch data');

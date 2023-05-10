@@ -4,7 +4,7 @@ import { IBlogPost } from "../../../types/IBlogPost.interface";
 import Link from "next/link";
 
 async function getData(slug: string): Promise<IBlogPost | null> {
-    const MAIN_APP_BASE_URL = 'http://localhost:3000'
+    const MAIN_APP_BASE_URL = process.env.MAIN_APP_BASE_URL || 'http://localhost:3000';
 
     const res = await fetch(`${MAIN_APP_BASE_URL}/api/blog/${slug}`);
     if (!res.ok) {
