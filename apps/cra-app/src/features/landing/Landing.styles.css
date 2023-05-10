@@ -1,0 +1,66 @@
+.mainContent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.mainContent .title {
+  position: relative;
+  max-width: 600px;
+}
+
+.mainContent .title h2 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #7a551c;
+  line-height: 1.2em;
+}
+
+.mainContent .title h2 span {
+  background: #9b7239;
+  color: #ffffd5;
+  padding: 0 10px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+.mainContent .title p {
+  font-size: 1.8em;
+  line-height: 1.5;
+  color: #7a551c;
+  font-family: 'Lora', serif;
+  margin-bottom: 20px;;
+}
+
+
+.mainContent .title a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffd5;
+  background-color: #7a551c;
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.mainContent .title a:hover {
+  color: #7a551c;
+  background: #ffffd5;
+}
+
+.mainContent .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: -50px;
+}
+
+.mainContent .imgBox img {
+  width: 480px;
+}

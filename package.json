@@ -1,0 +1,17 @@
+{
+  "name": "cra-gradual-migration",
+  "version": "1.0.0",
+  "description": "Adopt gradual migration of CRA project to Next.js",
+  "main": "index.js",
+  "author": "malazay-sc",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
